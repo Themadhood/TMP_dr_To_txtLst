@@ -4,10 +4,10 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='TPC_4H_Exibits_Juging_Template',
+    name='TPC_TMP_dr_To_txtLst',
     version="1.0.0",#__version__,
 
-    url='https://github.com/Themadhood/4H_Exibits_Juging_Template',
+    url='https://github.com/Themadhood/TMP_dr_To_txtLst',
     author='Themadhood Pequot',
     author_email='themadhoodpequot@gmail.com',
 
@@ -19,7 +19,7 @@ setup(
         #"google-api-python-client",],
 
     classifiers=[
-        'Intended Audience :: Developers',
+        'Intended Audience :: NA',
 
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
