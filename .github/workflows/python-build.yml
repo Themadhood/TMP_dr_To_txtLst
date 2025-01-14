@@ -43,12 +43,12 @@ jobs:
       run: |
         built_path=TMP_dr_To_txtLst-v${{ github.event.release.tag_name }}-$RUNNER_OS-${{ matrix.cfg.architecture }}.zip
         echo "BUILT_PATH=$built_path" >> $GITHUB_ENV
-        python -m PyInstaller -y Amulet.spec
+        python -m PyInstaller -y TMP_dr_To_txtLst.spec
         cd dist
         if [ "$RUNNER_OS" == "Windows" ]; then
           7z a $built_path TMP_dr_To_txtLst
         elif [ "$RUNNER_OS" == "macOS" ]; then
-          zip -r $built_path Amulet
+          zip -r $built_path TMP_dr_To_txtLst
         else
           echo "$RUNNER_OS not supported"
           exit 1
